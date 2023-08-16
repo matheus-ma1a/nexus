@@ -34,7 +34,6 @@ const CoresStyled = styled.div`
 function Cores() {
   const { width, height } = useWindowResize();
 
-  console.log(width)
 
   return (
     <CoresStyled>

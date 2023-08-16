@@ -6,13 +6,7 @@ export const MainStyled = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  .footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-  }
+  
 `
 
 export const FirstSectionStyled = styled.div`
@@ -160,6 +154,12 @@ export const SecondSection = styled.div`
 
   }
 
+  @media (max-width: 750px) {
+    h1{
+      font-size: 2.5rem;
+    }
+  }
+
 `
 
 export const Meio = styled.div`
@@ -286,7 +286,7 @@ export const SlideStyled = styled.div`
 
 `
 
-export const ButtonSaibaMaisStyled = styled.button`
+export const ButtonSaibaMaisStyled = styled.a`
     color: #fff;
     background-color: transparent;
     background-image: none;
@@ -300,6 +300,10 @@ export const ButtonSaibaMaisStyled = styled.button`
     font-weight: 600;
     transition: all .2s;
     z-index: 1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover{
     box-shadow: none;
@@ -328,7 +332,7 @@ export const ButtonStyled = styled.a`
     transition: all .2s;
     border: none;
     width: ${({ largura }) => largura ? largura :'300px' } ;
-    height: 45px;
+    height: 50px;
     z-index: 1;
     &:hover{
       box-shadow: 0 4px 20px rgba(41,42,208,.8);

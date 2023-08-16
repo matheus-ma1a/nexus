@@ -3,7 +3,7 @@ import { ButtonSaibaMaisStyled } from '../styled'
 
 function ButtonSaibaMais() {
   return (
-    <ButtonSaibaMaisStyled>
+    <ButtonSaibaMaisStyled href='https://form.respondi.app/RQQZZLJp' >
       Saiba Mais
     </ButtonSaibaMaisStyled>
   );
